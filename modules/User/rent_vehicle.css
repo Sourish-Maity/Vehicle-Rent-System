@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .nav-links a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form field styling */
+.availability-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+    text-align: left;
+}
+
+.availability-form input[type="text"],
+.availability-form input[type="datetime-local"],
+.availability-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.location-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.location-inputs input {
+    flex: 1;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #333;
+}
+
+/* Error message styling */
+.message {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Promo banner styling */
+.promo-banner {
+    background-color: #e0f7e0;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.promo-banner h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.promo-banner p {
+    font-size: 16px;
+    color: #555;
+}

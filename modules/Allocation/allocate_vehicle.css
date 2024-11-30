@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.vehicle-selection-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vehicle-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+}
+
+.vehicle-card input[type="radio"] {
+    display: none;
+}
+
+.vehicle-card label {
+    padding: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+.vehicle-info h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.vehicle-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.price-breakdown p {
+    font-size: 14px;
+    color: #444;
+}
+
+.price-breakdown strong {
+    font-weight: bold;
+    color: #8a15d7;
+}
+
+.reserve-button {
+    background-color: #4CAF50;
+    color: rgb(32, 228, 14);
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+    background-color: #45a049;
+}

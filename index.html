@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetFly - Premium Car Rental Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background image setup with animations for transitioning images */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: backgroundChange 16s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes backgroundChange {
+            0% { background-image: url('./modules/User/image1.jpg'); }
+            33% { background-image: url('./modules/User/image2.jpg'); }
+            66% { background-image: url('./modules/User/image3.jpg'); }
+            100% { background-image: url('./modules/User/image4.jpg'); }
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00FF84;
+        }
+
+        .nav-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .search-container {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .search-container input {
+            padding: 5px;
+            background-color: #222;
+            border: none;
+            color: white;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-container button {
+            background: #333;
+            border: none;
+            padding: 6px 10px;
+            cursor: pointer;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .account-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        /* Center auth-section */
+        .auth-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 90%;
+            margin: auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+        }
+
+        .auth-section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .auth-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .login-btn, .register-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #000;
+            background-color: #00FF84;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #000;
+            color: #ccc;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #00FF84;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Image Container -->
+    <div class="background"></div>
+
+    <header class="header">
+        <div class="logo">RoadWave.</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Collections</a>
+            <a href="#">Contacts</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <button>🔍</button>
+            </div>
+            <button class="account-btn">👤</button>
+        </nav>
+    </header>
+
+    <main class="auth-section">
+      <h1>Welcome to RoadWave</h1>
+      <p>Please log in or register to continue</p>
+      <div class="auth-buttons">
+          <a href="./modules/User/login.php"><button class="login-btn">Login</button></a>
+          <a href="./modules/User/register.php"><button class="register-btn">Register</button></a>
+      </div>
+  </main>
+  
+
+    <footer class="footer">
+        <p>Connect with us on <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>

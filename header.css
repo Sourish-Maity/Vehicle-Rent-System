@@ -1,0 +1,62 @@
+/* Header Styles */
+.header {
+    background-color: #f2af00;
+}
+
+.top-bar {
+    background-color: #243a73;
+    color: #fff;
+    padding: 0.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .contact {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .contact img {
+    margin-right: 0.5em;
+}
+
+.top-bar .user-options {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .user-options img {
+    margin-left: 0.5em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .logo span {
+    color: #243a73;
+}
+
+.navbar nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.navbar .button {
+    background-color: #243a73;
+    padding: 0.5em 1em;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}

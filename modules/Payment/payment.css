@@ -1,0 +1,76 @@
+/* Center the payment form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.payment-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.payment-container h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.reservation-id {
+    font-weight: bold;
+    color: #3c9b5f;
+}
+
+.payment-form label {
+    display: block;
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.payment-form input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #3c9b5f;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #36a354;
+}
+
+.success-message {
+    background-color: #5900ff;
+    color: #eb7304;
+    padding: 1rem;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+/* Footer Styles */
+.footer {
+    background-color: #f9f9f9;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-sections h3 {
+    color: #243a73;
+    margin-bottom: 0.5em;
+}
+
+.footer-sections a {
+    color: #555;
+    display: block;
+    margin-bottom: 0.3em;
+    text-decoration: none;
+}
+
+.footer-sections a:hover {
+    color: #243a73;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5em;
+}
+
+.download-app img {
+    width: 120px;
+    margin-top: 0.5em;
+}
